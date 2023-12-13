@@ -1,0 +1,13 @@
+@import '~bootstrap/scss/bootstrap';
+
+// TODO: Remove on production
+
+.react-p5-wrapper {
+    >* {
+        display: none;
+
+        &:last-child {
+            display: flex;
+        }
+    }
+}

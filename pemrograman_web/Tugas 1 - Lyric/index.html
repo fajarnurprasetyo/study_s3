@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.png" type="image/png">
+  <title>Rick Astley - Never Gonna Give You Up</title>
+  <script src="vue.global.prod.js"></script>
+  <script src="srt-parser.js"></script>
+
+  <style>
+    html,
+    body {
+      user-select: none;
+      margin: 0px;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 18pt;
+      text-shadow: 1px 1px 1px #00000088;
+      color: white;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @keyframes background1 {
+      from {
+        background-position-x: 100%;
+      }
+
+      to {
+        background-position-x: 0%;
+      }
+    }
+
+    @keyframes background2 {
+      from {
+        background-position-x: 175%;
+      }
+
+      to {
+        background-position-x: 75%;
+      }
+    }
+
+    .background {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background: #dddddd44;
+      background-size: 25%;
+      animation-duration: 7s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    .background1 {
+      background: url('Rick Astley.gif');
+      animation-name: background1;
+    }
+
+    .background2 {
+      background: url('Rick Astley.gif');
+      background-position-y: 25%;
+      animation-name: background2;
+    }
+
+    .container {
+      overflow: hidden;
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .play, .subtitle {
+      position: absolute;
+      left: 50%;
+      border-radius: 7px;
+      padding: 4px 8px;
+      background-color: #00000055;
+      transform: translate(-50%, -50%);
+      transition: all .7s ease-in-out;
+    }
+
+    .play {
+      top: 50%;
+      padding: 7px 14px;
+      font-size: 32px;
+    }
+
+    .subtitle.active {
+      padding: 7px 14px;
+      transform: translate(-50%, -50%) scale(1.7);
+      background-color: #00000077;
+    }
+  </style>
+</head>
+
+<body>
+  <audio id="audio" class="hidden">
+    <source src="Rick Astley - Never Gonna Give You Up.mp3" type="audio/mp3">
+  </audio>
+  <div id="app">
+    <div class="container hidden" @click="play">
+      <div class="background background1"></div>
+      <div class="background background2"></div>
+      <div class="background"></div>
+      <div v-if="!playing" class="play">
+        Click anywhere to play!
+      </div>
+      <div v-else>
+        <template v-for="({text, startSeconds, endSeconds}, index) in subtitle">
+          <div class="subtitle" :class="{active: index === currentIndex}" :style="getStyles(index)"
+            @click="audio.currentTime = startSeconds - 0.5">
+            <div v-if="seconds >= startSeconds && seconds <= endSeconds && setIndex(index)"></div>
+            {{text}}
+          </div>
+        </template>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function handleError(error) {
+      console.log(error);
+    }
+
+    (() => {
+      var reader = new XMLHttpRequest() || new ActiveXObject('MSXML2.XMLHTTP');
+      reader.open('get', 'Rick Astley - Never Gonna Give You Up.srt', true);
+      reader.onerror = handleError;
+      reader.onload = () => {
+        Vue.createApp({
+          data() {
+            var parser = new SrtParser();
+
+            return {
+              audio: document.getElementById('audio'),
+              subtitle: parser.fromSrt(reader.responseText),
+              currentIndex: 0,
+              seconds: 0,
+              playing: false,
+            }
+          },
+          methods: {
+            play() {
+              if (this.audio.paused) {
+                this.audio.play();
+              }
+              this.playing = !this.audio.paused;
+            },
+            setIndex(index) {
+              if (index !== this.currentIndex) {
+                this.currentIndex = index;
+              }
+              return false;
+            },
+            getStyles(index) {
+              var off = Math.abs(index - this.currentIndex) / 7;
+
+              return {
+                top: `calc(50% + ${((index - this.currentIndex) * 57)}px)`,
+                cursor: off < 1 ? 'pointer' : 'unset',
+                opacity: 1 - off,
+              };
+            },
+          },
+          mounted() {
+            this.$el.classList.remove('hidden');
+
+            this.audio.ontimeupdate = () => {
+              this.seconds = this.audio.currentTime + 1;
+            };
+
+            this.audio.onended = () => {
+              this.audio.play();
+            };
+
+            console.log(this.subtitle[0]);
+          },
+        }).mount('#app');
+      };
+      reader.send(null);
+    })();
+  </script>
+</body>
+
+</html>

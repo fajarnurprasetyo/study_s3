@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fajar Nur Prasetyo | 1122100007</title>
+
+    <style>
+        html,
+        body {
+            margin: 0px;
+            font-family: sans-serif;
+        }
+
+        h1 {
+            font-weight: 500;
+            margin: 0px 8px;
+        }
+
+        .title {
+            font-size: 20pt;
+            font-weight: 500;
+            margin: 16px 8px;
+        }
+
+        .text-align .left {
+            text-align: left;
+        }
+
+        .text-align .center {
+            text-align: center;
+        }
+
+        .text-align .right {
+            text-align: right;
+        }
+
+        .flex-align {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-align .left {
+            align-self: flex-start;
+        }
+
+        .flex-align .center {
+            align-self: center;
+        }
+
+        .flex-align .right {
+            align-self: flex-end;
+        }
+
+        .item {
+            margin-top: 8px;
+            padding: 8px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        Tugas 1 Pemrograman Web
+        <br />
+        <sub>
+            Fajar Nur Prasetyo
+            <br />
+            1122100007
+        </sub>
+    </h1>
+
+    <br />
+
+    <div class="title">
+        Text Align
+    </div>
+
+    <div class="text-align">
+        <div class="item left">
+            Text Align Left
+        </div>
+        <div class="item center">
+            Text Align Center
+        </div>
+        <div class="item right">
+            Text Align Right
+        </div>
+    </div>
+
+    <div class="title">
+        Flex Align
+    </div>
+
+    <div class="flex-align">
+        <div class="item left">
+            Flex Align Left
+        </div>
+        <div class="item center">
+            Flex Align Center
+        </div>
+        <div class="item right">
+            Flex Align Right
+        </div>
+    </div>
+
+    <script>
+        (() => {
+            function randomColor() {
+                var color = '#';
+                for (var i = 0; i < 6; i++) {
+                    color += Math.floor(Math.random() * 10);
+                }
+                return color;
+            }
+
+            const items = document.getElementsByClassName('item');
+
+            for (const item of items) {
+                item.style.backgroundColor = randomColor();
+            }
+        })()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+1
+00:00:00,000 --> 00:00:03,000
+Fajar Nur Prasetyo
+
+2
+00:00:03,000 --> 00:00:06,000
+1122100007
+
+3
+00:00:06,000 --> 00:00:09,000
+S1 Teknik Informatika
+
+4
+00:00:09,000 --> 00:00:19,060
+♪♪♪
+
+5
+00:00:19,063 --> 00:00:22,313
+We're no strangers to love
+
+6
+00:00:22,917 --> 00:00:26,953
+You know the rules and so do I
+
+7
+00:00:27,316 --> 00:00:31,104
+A full commitment's what I'm thinking of
+
+8
+00:00:31,409 --> 00:00:34,949
+You wouldn't get this from any other guy
+
+9
+00:00:35,403 --> 00:00:40,047
+I just wanna tell you how I'm feeling
+
+10
+00:00:40,618 --> 00:00:43,068
+Gotta make you understand
+
+11
+00:00:43,361 --> 00:00:45,096
+Never gonna give you up
+
+12
+00:00:45,441 --> 00:00:47,387
+Never gonna let you down
+
+13
+00:00:47,647 --> 00:00:51,279
+Never gonna run around and desert you
+
+14
+00:00:51,819 --> 00:00:53,652
+Never gonna make you cry
+
+15
+00:00:53,980 --> 00:00:55,904
+Never gonna say goodbye
+
+16
+00:00:56,124 --> 00:00:59,858
+Never gonna tell a lie and hurt you
+
+17
+00:01:01,044 --> 00:01:04,897
+We've known each other for so long
+
+18
+00:01:05,343 --> 00:01:07,101
+Your heart's been aching, but
+
+19
+00:01:07,454 --> 00:01:09,267
+You're too shy to say it
+
+20
+00:01:09,612 --> 00:01:13,348
+Inside, we both know what's been going on
+
+21
+00:01:13,781 --> 00:01:17,445
+We know the game and we're gonna play it
+
+22
+00:01:17,808 --> 00:01:22,484
+And if you ask me how I'm feeling
+
+23
+00:01:22,864 --> 00:01:25,286
+Don't tell me you're too blind to see
+
+24
+00:01:25,684 --> 00:01:27,507
+Never gonna give you up
+
+25
+00:01:27,810 --> 00:01:29,736
+Never gonna let you down
+
+26
+00:01:29,956 --> 00:01:33,766
+Never gonna run around and desert you
+
+27
+00:01:34,186 --> 00:01:36,000
+Never gonna make you cry
+
+28
+00:01:36,377 --> 00:01:38,307
+Never gonna say goodbye
+
+29
+00:01:38,505 --> 00:01:42,140
+Never gonna tell a lie and hurt you
+
+30
+00:01:42,630 --> 00:01:44,396
+Never gonna give you up
+
+31
+00:01:44,794 --> 00:01:46,658
+Never gonna let you down
+
+32
+00:01:46,905 --> 00:01:50,675
+Never gonna run around and desert you
+
+33
+00:01:51,081 --> 00:01:52,986
+Never gonna make you cry
+
+34
+00:01:53,295 --> 00:01:55,151
+Never gonna say goodbye
+
+35
+00:01:55,444 --> 00:01:59,264
+Never gonna tell a lie and hurt you
+
+36
+00:02:00,289 --> 00:02:03,200
+( Ooh... give you up )
+
+37
+00:02:04,215 --> 00:02:07,653
+( Ooh... give you up )
+
+38
+00:02:08,889 --> 00:02:10,384
+Never gonna give
+Never gonna give
+
+39
+00:02:10,717 --> 00:02:11,874
+( Give you up )
+
+40
+00:02:13,016 --> 00:02:14,579
+Never gonna give
+Never gonna give
+
+41
+00:02:14,919 --> 00:02:16,149
+( Give you up )
+
+42
+00:02:17,225 --> 00:02:21,214
+We've known each other for so long
+
+43
+00:02:21,586 --> 00:02:23,244
+Your heart's been aching, but
+
+44
+00:02:23,659 --> 00:02:25,514
+You're too shy to say it
+
+45
+00:02:25,870 --> 00:02:29,625
+Inside we both know what's been going on
+
+46
+00:02:30,006 --> 00:02:33,650
+We know the game and we're gonna play it
+
+47
+00:02:34,001 --> 00:02:38,447
+I just wanna tell you how I'm feeling
+
+48
+00:02:39,155 --> 00:02:41,610
+Gotta make you understand
+
+49
+00:02:41,897 --> 00:02:43,653
+Never gonna give you up
+
+50
+00:02:44,042 --> 00:02:45,946
+Never gonna let you down
+
+51
+00:02:46,185 --> 00:02:49,859
+Never gonna run around and desert you
+
+52
+00:02:50,317 --> 00:02:52,222
+Never gonna make you cry
+
+53
+00:02:52,543 --> 00:02:54,415
+Never gonna say goodbye
+
+54
+00:02:54,729 --> 00:02:58,421
+Never gonna tell a lie and hurt you
+
+55
+00:02:58,947 --> 00:03:00,634
+Never gonna give you up
+
+56
+00:03:01,001 --> 00:03:02,856
+Never gonna let you down
+
+57
+00:03:03,147 --> 00:03:06,899
+Never gonna run around and desert you
+
+58
+00:03:07,312 --> 00:03:09,186
+Never gonna make you cry
+
+59
+00:03:09,516 --> 00:03:11,325
+Never gonna say goodbye
+
+60
+00:03:11,626 --> 00:03:15,374
+Never gonna tell a lie and hurt you
+
+61
+00:03:15,818 --> 00:03:17,437
+Never gonna give you up
+
+62
+00:03:17,946 --> 00:03:19,876
+Never gonna let you down
+
+63
+00:03:20,116 --> 00:03:23,910
+Never gonna run around and desert you
+
+64
+00:03:24,289 --> 00:03:26,098
+Never gonna make you cry
+
+65
+00:03:26,451 --> 00:03:28,441
+Never gonna say goodbye
+
+66
+00:03:28,665 --> 00:03:31,837
+Never gonna tell a lie and hurt you.
